@@ -1,0 +1,88 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+<style type="text/css"><!--  
+	@media print{.displayOnly {display: none;}}
+	td.TableHeaderPrint{
+		border-bottom: dotted 1px black;
+	}
+	.TableHeaderPrint{
+		font-weight: bold;
+	}
+	.TableTitlePrint{
+		font-size: 130%;
+		font-weight: bold;
+	}
+	.TableBodyPrint{
+		padding-left: .5em;
+		border-bottom: dotted 1px black;
+	}
+	*{
+		font-family: arial,sans-serif;
+	}
+	--></style><br />
+<table border="0" bordercolor="silver" cellpadding="2" cellspacing="0" width="100%">
+	<tr>
+		<td>
+			<div class=TableTitlePrint><%%DETAIL_VIEW_TITLE%%></div>
+			<div align="center" class="displayOnly">
+				<input type="image" src="back.gif">
+				<input type="image" name="deselect" src="deselect.gif">
+				</div>
+			</td>
+		</tr>
+	<tr>
+		<td>
+			<table width="100%">
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">ID</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(id)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Disease</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><span id="disease<%%RND1%%>"><%%COMBOTEXT(disease)%%></span>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Symptom</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><span id="symptom<%%RND1%%>"><%%COMBOTEXT(symptom)%%></span>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Expected probability</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(expected_probability)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Minimum</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(minimum)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Maximum</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(maximum)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Reading other value</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(reading_other_value)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Comments</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(comments)%%>&nbsp;&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+

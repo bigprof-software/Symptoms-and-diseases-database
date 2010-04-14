@@ -1,0 +1,76 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+<style type="text/css"><!--  
+	@media print{.displayOnly {display: none;}}
+	td.TableHeaderPrint{
+		border-bottom: dotted 1px black;
+	}
+	.TableHeaderPrint{
+		font-weight: bold;
+	}
+	.TableTitlePrint{
+		font-size: 130%;
+		font-weight: bold;
+	}
+	.TableBodyPrint{
+		padding-left: .5em;
+		border-bottom: dotted 1px black;
+	}
+	*{
+		font-family: arial,sans-serif;
+	}
+	--></style><br />
+<table border="0" bordercolor="silver" cellpadding="2" cellspacing="0" width="100%">
+	<tr>
+		<td>
+			<div class=TableTitlePrint><%%DETAIL_VIEW_TITLE%%></div>
+			<div align="center" class="displayOnly">
+				<input type="image" src="back.gif">
+				<input type="image" name="deselect" src="deselect.gif">
+				</div>
+			</td>
+		</tr>
+	<tr>
+		<td>
+			<table width="100%">
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">ID</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(id)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Short name</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(short_name)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Latin name</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(latin_name)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Description</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(description)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Other details</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(other_details)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Comments</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(comments)%%>&nbsp;&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+

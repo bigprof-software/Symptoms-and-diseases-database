@@ -1,0 +1,142 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+<style type="text/css"><!--  
+	@media print{.displayOnly {display: none;}}
+	td.TableHeaderPrint{
+		border-bottom: dotted 1px black;
+	}
+	.TableHeaderPrint{
+		font-weight: bold;
+	}
+	.TableTitlePrint{
+		font-size: 130%;
+		font-weight: bold;
+	}
+	.TableBodyPrint{
+		padding-left: .5em;
+		border-bottom: dotted 1px black;
+	}
+	*{
+		font-family: arial,sans-serif;
+	}
+	--></style><br />
+<table border="0" bordercolor="silver" cellpadding="2" cellspacing="0" width="100%">
+	<tr>
+		<td>
+			<div class=TableTitlePrint><%%DETAIL_VIEW_TITLE%%></div>
+			<div align="center" class="displayOnly">
+				<input type="image" src="back.gif">
+				<input type="image" name="deselect" src="deselect.gif">
+				</div>
+			</td>
+		</tr>
+	<tr>
+		<td>
+			<table width="100%">
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">ID</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(id)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Last name</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(last_name)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">First name</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(first_name)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Gender</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%COMBOTEXT(gender)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Birth date</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%COMBOTEXT(birth_date)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Age</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(age)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Address</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(address)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">City</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(city)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">State</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%COMBOTEXT(state)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Zip</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(zip)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Home phone</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(home_phone)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Work phone</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(work_phone)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Mobile</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(mobile)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Other details</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(other_details)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Comments</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(comments)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Filed</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(filed)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class="TableHeaderPrint" valign="top" width="20%">
+						<div class="TableHeaderPrint" style="text-align: right;">Last modified</div>
+						</td>
+					<td class="TableBodyPrint" xwidth="300" valign="top"><%%VALUE(last_modified)%%>&nbsp;&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+

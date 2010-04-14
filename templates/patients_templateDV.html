@@ -1,0 +1,199 @@
+<!-- Edit this file to change the layout of the detail view form -->
+
+<script type="text/javascript" src="resources/datepicker/js/datepicker.packed.js"></script>
+<link href="resources/datepicker/css/datepicker.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css"><!--  #noMouseOver:hover{ color: #000000; }  --></style>
+<table border=1 bordercolor=navy cellpadding=0 cellspacing=0>
+	<tr>
+		<td>
+			<div class=TableTitle><%%DETAIL_VIEW_TITLE%%></div>
+			</td>
+		</tr>
+	<tr>
+		<td class=TableHeader colspan=3 height=25>
+			<div class=TableHeader style="text-align: right; height: 100%; padding-right: 3px;">
+				<a href="patient_symptoms_view.php?FilterField[1]=2&FilterOperator[1]=%3C%3D%3E&FilterValue[1]=<%%VALUE(last_name)%%>, <%%VALUE(first_name)%%>" style="position: relative; top: 5px; border: 1px solid navy; background-color: #ffffff; text-decoration: none; color: navy; padding: 1px 10px 1px 10px; visibility: hidden;" id="patient_symptoms_link">Patient symptoms</a>
+				</div>
+			</td>
+		</tr>
+	<tr>
+		<td>
+			<table>
+				<tr>
+					<td colspan=2></td>
+					<td rowspan=6 valign=top>
+						<div><%%DVPRINT_BUTTON%%></div>
+						<div><%%UPDATE_BUTTON%%></div>
+						<div><%%DELETE_BUTTON%%></div>
+						<div><%%DESELECT_BUTTON%%></div>
+						<br />
+						<div><%%INSERT_BUTTON%%></div>
+						</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">ID</div>
+						</td>
+					<td class=TableBody id="noMouseOver" width=300 valign=top><%%VALUE(id)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;"><b class="Error"><%%TRANSLATION(*)%%></b> Last name</div>
+						</td>
+					<td class=TableBody id="noMouseOver" width=300 valign=top><input size="40" type="text" class="TextBox" name="last_name" id="last_name" value="<%%VALUE(last_name)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;"><b class="Error"><%%TRANSLATION(*)%%></b> First name</div>
+						</td>
+					<td class=TableBody id="noMouseOver" width=300 valign=top><input size="40" type="text" class="TextBox" name="first_name" id="first_name" value="<%%VALUE(first_name)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Gender</div>
+						</td>
+					<td class=TableBody id="noMouseOver" width=300 valign=top><span style="float: left;"><%%COMBO(gender)%%></span>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Birth date</div>
+						</td>
+					<td class=TableBody id="noMouseOver" width=300 valign=top><span style="float: left;"><%%COMBO(birth_date)%%></span>&nbsp;&nbsp;
+						<script>$('birth_date').className='Option split-date';</script>
+						</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Age</div>
+						</td>
+					<td class=TableBody id="noMouseOver" width=300 valign=top><input size="10" type="text" class="TextBox" name="age" id="age" value="<%%VALUE(age)%%>">&nbsp;&nbsp;<a href="#" onclick="return patients_showDescription('age', event);" tabindex="-1"><img src="information.gif" border="0" align="top"></a></td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Address</div>
+						</td>
+					<td class=TableBody id="noMouseOver" width=300 valign=top><textarea class=TextBox name=address id=address cols=70 rows=5><%%VALUE(address)%%></textarea></td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">City</div>
+						</td>
+					<td class=TableBody id="noMouseOver" width=300 valign=top><input size="40" type="text" class="TextBox" name="city" id="city" value="<%%VALUE(city)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">State</div>
+						</td>
+					<td class=TableBody id="noMouseOver" width=300 valign=top><span style="float: left;"><%%COMBO(state)%%></span>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Zip</div>
+						</td>
+					<td class=TableBody id="noMouseOver" width=300 valign=top><input size="10" type="text" class="TextBox" name="zip" id="zip" value="<%%VALUE(zip)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Home phone</div>
+						</td>
+					<td class=TableBody id="noMouseOver" width=300 valign=top><input size="40" type="text" class="TextBox" name="home_phone" id="home_phone" value="<%%VALUE(home_phone)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Work phone</div>
+						</td>
+					<td class=TableBody id="noMouseOver" width=300 valign=top><input size="40" type="text" class="TextBox" name="work_phone" id="work_phone" value="<%%VALUE(work_phone)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Mobile</div>
+						</td>
+					<td class=TableBody id="noMouseOver" width=300 valign=top><input size="40" type="text" class="TextBox" name="mobile" id="mobile" value="<%%VALUE(mobile)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Other details</div>
+						</td>
+					<td class=TableBody id="noMouseOver" width=300 valign=top><%%HTMLAREA(other_details)%%></td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Comments</div>
+						</td>
+					<td class=TableBody id="noMouseOver" width=300 valign=top><%%HTMLAREA(comments)%%></td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Filed</div>
+						</td>
+					<td class=TableBody id="noMouseOver" width=300 valign=top><%%VALUE(filed)%%>&nbsp;&nbsp;<a href="#" onclick="return patients_showDescription('filed', event);" tabindex="-1"><img src="information.gif" border="0" align="top"></a></td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Last modified</div>
+						</td>
+					<td class=TableBody id="noMouseOver" width=300 valign=top><%%VALUE(last_modified)%%>&nbsp;&nbsp;<a href="#" onclick="return patients_showDescription('last_modified', event);" tabindex="-1"><img src="information.gif" border="0" align="top"></a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+
+	<div id="fieldDescription" class="fieldDescription" onclick="this.style.visibility='hidden';">&nbsp;</div>
+
+	<script type="text/javascript" src="nicEdit.js"></script>
+	<script language="javaScript"><!-- 
+		bkLib.onDomLoaded(function(){
+			if(document.getElementById('other_details')!=undefined)
+				new nicEditor().panelInstance('other_details');
+			if(document.getElementById('comments')!=undefined)
+				new nicEditor().panelInstance('comments');
+		}); //--></script>
+
+	<script>
+		if(document.getElementsByName('last_name').length){
+			document.getElementsByName('last_name')[0].focus();
+		}
+	</script>
+	<script>
+		function patients_showDescription(fieldName, e){
+			var desc='&nbsp';
+			if(fieldName=='age'){
+				desc="<b>Age</b><br />Automatically calculated from birth date.";
+			}
+			if(fieldName=='filed'){
+				desc="<b>Filed</b><br />This field is automatically populated with the date and time when this record was created.";
+			}
+			if(fieldName=='last_modified'){
+				desc="<b>Last modified</b><br />This field is automatically populated with the date and time when this record was last modified.";
+			}
+
+			var x=0;
+			var y=0;
+			if(e.pageX){
+				x=e.pageX-10;
+				y=e.pageY-10;
+			}else if(e.clientX){
+				x=e.clientX-10;
+				y=e.clientY-10;
+				if(document.body && ( document.body.scrollLeft || document.body.scrollTop )){
+					x+=document.body.scrollLeft;
+					y+=document.body.scrollTop;
+				}else if(document.documentElement && ( document.documentElement.scrollLeft || document.documentElement.scrollTop )){
+					x+=document.documentElement.scrollLeft;
+					y+=document.documentElement.scrollTop;
+				}
+			}else{
+				return false;
+			}
+
+			$('fieldDescription').innerHTML=desc;
+			$('fieldDescription').style.left=x+'px';
+			$('fieldDescription').style.top=y+'px';
+			$('fieldDescription').style.visibility='visible';
+
+			return false;
+		}
+	</script>

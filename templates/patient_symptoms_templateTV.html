@@ -1,0 +1,12 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%select%%> and <%%endselect%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- open the generated 'patient_symptoms_view.php' file in your text editor and -->
+<!-- change the value of $x->ShowTableHeader to 0 -->
+
+		<td id="patient_symptoms.patient.<%%VALUE(ID)%%>" valign="top" width="150" class="TableBody"><%%SELECT%%><%%VALUE(Patient)%%><%%ENDSELECT%%></td>
+		<td id="patient_symptoms.symptom.<%%VALUE(ID)%%>" valign="top" width="150" class="TableBody"><%%SELECT%%><%%VALUE(Symptom)%%><%%ENDSELECT%%></td>
+		<td id="patient_symptoms.observation_date.<%%VALUE(ID)%%>" valign="top" width="150" class="TableBody"><%%SELECT%%><%%VALUE(Observation date)%%><%%ENDSELECT%%></td>
+		<td id="patient_symptoms.observation_time.<%%VALUE(ID)%%>" valign="top" width="150" class="TableBody"><%%SELECT%%><%%VALUE(Observation time)%%><%%ENDSELECT%%></td>
+		<td id="patient_symptoms.symptom_value.<%%VALUE(ID)%%>" valign="top" width="150" class="TableBody"><%%SELECT%%><%%VALUE(Symptom value)%%><%%ENDSELECT%%></td>

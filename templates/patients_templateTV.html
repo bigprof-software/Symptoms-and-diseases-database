@@ -1,0 +1,17 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%select%%> and <%%endselect%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- open the generated 'patients_view.php' file in your text editor and -->
+<!-- change the value of $x->ShowTableHeader to 0 -->
+
+		<td id="patients.last_name.<%%VALUE(ID)%%>" valign="top" width="120" class="TableBody"><%%SELECT%%><%%VALUE(Last name)%%><%%ENDSELECT%%></td>
+		<td id="patients.first_name.<%%VALUE(ID)%%>" valign="top" width="120" class="TableBody"><%%SELECT%%><%%VALUE(First name)%%><%%ENDSELECT%%></td>
+		<td id="patients.gender.<%%VALUE(ID)%%>" valign="top" width="70" class="TableBody"><%%SELECT%%><%%VALUE(Gender)%%><%%ENDSELECT%%></td>
+		<td id="patients.age.<%%VALUE(ID)%%>" valign="top" width="50" class="TableBodyNumeric"><%%SELECT%%><%%VALUE(Age)%%><%%ENDSELECT%%></td>
+		<td id="patients.city.<%%VALUE(ID)%%>" valign="top" width="150" class="TableBody"><%%SELECT%%><%%VALUE(City)%%><%%ENDSELECT%%></td>
+		<td id="patients.state.<%%VALUE(ID)%%>" valign="top" width="50" class="TableBody"><%%SELECT%%><%%VALUE(State)%%><%%ENDSELECT%%></td>
+		<td id="patients.zip.<%%VALUE(ID)%%>" valign="top" width="50" class="TableBody"><%%SELECT%%><%%VALUE(Zip)%%><%%ENDSELECT%%></td>
+		<td id="patients.home_phone.<%%VALUE(ID)%%>" valign="top" width="120" class="TableBody"><%%SELECT%%><%%VALUE(Home phone)%%><%%ENDSELECT%%></td>
+		<td id="patients.work_phone.<%%VALUE(ID)%%>" valign="top" width="120" class="TableBody"><%%SELECT%%><%%VALUE(Work phone)%%><%%ENDSELECT%%></td>
+		<td id="patients.mobile.<%%VALUE(ID)%%>" valign="top" width="120" class="TableBody"><%%SELECT%%><%%VALUE(Mobile)%%><%%ENDSELECT%%></td>

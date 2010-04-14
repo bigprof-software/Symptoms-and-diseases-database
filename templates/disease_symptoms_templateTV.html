@@ -1,0 +1,13 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%select%%> and <%%endselect%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- open the generated 'disease_symptoms_view.php' file in your text editor and -->
+<!-- change the value of $x->ShowTableHeader to 0 -->
+
+		<td id="disease_symptoms.disease.<%%VALUE(ID)%%>" valign="top" width="150" class="TableBody"><%%SELECT%%><%%VALUE(Disease)%%><%%ENDSELECT%%></td>
+		<td id="disease_symptoms.symptom.<%%VALUE(ID)%%>" valign="top" width="300" class="TableBody"><%%SELECT%%><%%VALUE(Symptom)%%><%%ENDSELECT%%></td>
+		<td id="disease_symptoms.expected_probability.<%%VALUE(ID)%%>" valign="top" width="150" class="TableBody"><%%SELECT%%><%%VALUE(Expected probability)%%><%%ENDSELECT%%></td>
+		<td id="disease_symptoms.minimum.<%%VALUE(ID)%%>" valign="top" width="150" class="TableBody"><%%SELECT%%><%%VALUE(Minimum)%%><%%ENDSELECT%%></td>
+		<td id="disease_symptoms.maximum.<%%VALUE(ID)%%>" valign="top" width="150" class="TableBody"><%%SELECT%%><%%VALUE(Maximum)%%><%%ENDSELECT%%></td>
+		<td id="disease_symptoms.reading_other_value.<%%VALUE(ID)%%>" valign="top" width="150" class="TableBody"><%%SELECT%%><%%VALUE(Reading other value)%%><%%ENDSELECT%%></td>

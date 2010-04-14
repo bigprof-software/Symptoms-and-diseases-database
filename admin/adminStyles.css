@@ -1,0 +1,130 @@
+body{
+	font-family: "Trebuchet MS", arial;
+}
+
+h3{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.tdFormCaption{
+	border-top: solid 1px white;
+	border-left: solid 1px white;
+	border-bottom: solid 1px silver;
+	border-right: solid 1px silver;
+	background-color: #ECECFB;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.tdFormFooter{
+	border-top: solid 1px white;
+	border-left: solid 1px white;
+	border-bottom: solid 1px silver;
+	border-right: solid 1px silver;
+	background-color: #ECECFB;
+	padding: 3px;
+}
+
+.tdFormInput{
+	font-size: 14px;
+	border-top: solid 1px white;
+	border-left: solid 1px white;
+	border-bottom: solid 1px silver;
+	border-right: solid 1px silver;
+	background-color: white;
+	padding-left: 5px;
+	padding-right: 2px;
+	padding-bottom: 8px;
+}
+
+.tdHeader{
+	border-top: solid 1px white;
+	border-left: solid 1px white;
+	border-bottom: solid 1px silver;
+	border-right: solid 1px silver;
+	background-color: #E6E6FA;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.tdFooter{
+	border-top: solid 1px white;
+	border-left: solid 1px white;
+	border-bottom: solid 1px silver;
+	border-right: solid 1px silver;
+	background-color: #E6E6FA;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 33%;
+}
+
+.tdCaptionCell{
+	border-top: solid 1px white;
+	border-left: solid 1px white;
+	border-bottom: solid 1px silver;
+	border-right: solid 1px silver;
+	background-color: #F1F1FC;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.tdCell{
+	border-top: solid 1px white;
+	border-left: solid 1px white;
+	border-bottom: solid 1px silver;
+	border-right: solid 1px silver;
+	background-color: white;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.tdCell:hover{
+	background-color: #FFFFE0;	
+}
+
+.formTextBox{
+	border: solid 1px black;
+	font-family: "Trebuchet MS", arial;
+	font-size: 16px;
+	padding-left: 2px;
+	padding-right: 2px;
+	background-color: #FFFFED;
+	color: #00008B;
+}
+
+.ColCaption{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.navLink{
+	font-size: 12px;
+	text-decoration: none;
+	color: blue;
+}
+.navLink:hover{
+	text-decoration: underline;
+	color: red;
+}
+
+.status{
+	width: 500px;
+	border: solid 1px silver;
+	background-color: #EFEFFB;
+	color: #00005E;
+	font-weight: bold;
+	padding: 10px;
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.highlight{
+	background-color: #FFFF80;
+	font-weight: bold;
+	padding-right: 5px;
+	color: #0000FF;
+}
